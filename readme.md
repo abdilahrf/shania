@@ -22,14 +22,13 @@ Example usage
 
 Special thanks to 
 
-```
 [@Rhynorater](https://twitter.com/Rhynorater)
 [@hacker_](https://twitter.com/hacker_)
 [@EdOverflow](https://twitter.com/EdOverflow)
 [@KarimPwnz](https://twitter.com/KarimPwnz)
 [@streaak](https://twitter.com/streaak)
 [@d0nutptr](https://twitter.com/d0nutptr)
-```
+
 
 ### Legal Disclaimer
 
