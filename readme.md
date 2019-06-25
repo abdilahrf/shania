@@ -16,6 +16,11 @@ Example usage
 ./scan-organisation.sh [ORGANISATION_NAME]
 ./scan-single.sh [USER_HANDLE]
 ```
+
+### FAQ
+
+- *jq: error (at <stdin>:4) ? *  Make sure your [GITHUB_TOKEN] already correct
+
 ### References
 
 - https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/
