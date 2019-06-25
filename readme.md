@@ -19,7 +19,7 @@ Example usage
 
 ### FAQ
 
-- *jq: error (at <stdin>:4) ? *  Make sure your [GITHUB_TOKEN] already correct
+- jq: error (at <stdin>:4)  Cannot index string with string "login" :  Make sure your [GITHUB_TOKEN] already correct
 
 ### References
 
