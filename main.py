@@ -146,11 +146,14 @@ def find_secret(target,provider):
 	result = open('{}-{}-leaks.txt'.format(target,provider),'w')
 	matching = open('./secrets-variable.txt','r').read()
 	matching = matching.split("\n")
+	debug_number = 1
 	for x in matching:
+
 		cari = re.findall(x,data)
 		if cari:
 			result.write(x.split("[")[0]+":\n"+"\n".join(cari)+"\n")
 			print("Found {}".format(x))
+		debug_number += 1			
 	os.system("awk '!x[$0]++' {}-{}-leaks.txt > {}-{}-leaks-clean.txt".format(target,provider,target,provider))
 
 if __name__ == '__main__':
