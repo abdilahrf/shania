@@ -153,13 +153,21 @@ def find_secret(target,provider):
 		if cari:
 			result.write(x.split("[")[0]+":\n"+"\n".join(cari)+"\n")
 			print("Found {}".format(x))
-		debug_number += 1			
+		debug_number += 1
 	os.system("awk '!x[$0]++' {}-{}-leaks.txt > {}-{}-leaks-clean.txt".format(target,provider,target,provider))
 
 if __name__ == '__main__':
-
+	print """
+     _                 _       
+    | |               (_)      
+ ___| |__   __ _ _ __  _  __ _ 
+/ __| '_ \ / _` | '_ \| |/ _` |
+\__ \ | | | (_| | | | | | (_| |
+|___/_| |_|\__,_|_| |_|_|\__,_|
+"""
 	if len(sys.argv) <= 2:
 		print "Usage: python secret-ci.py TARGET [1 (gitlab)|2 (travis)|3 (circel)]"
+		exit(1)
 
 	target = sys.argv[1]
 	provider = sys.argv[2]
