@@ -157,7 +157,8 @@ def find_secret(target,provider):
 	os.system("awk '!x[$0]++' {}-{}-leaks.txt > {}-{}-leaks-clean.txt".format(target,provider,target,provider))
 
 if __name__ == '__main__':
-	print """
+	if len(sys.argv) <= 2:
+        	print """
      _                 _       
     | |               (_)      
  ___| |__   __ _ _ __  _  __ _ 
@@ -165,7 +166,6 @@ if __name__ == '__main__':
 \__ \ | | | (_| | | | | | (_| |
 |___/_| |_|\__,_|_| |_|_|\__,_|
 """
-	if len(sys.argv) <= 2:
 		print "Usage: python secret-ci.py TARGET [1 (gitlab)|2 (travis)|3 (circel)]"
 		exit(1)
 
