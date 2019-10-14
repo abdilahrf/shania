@@ -10,7 +10,7 @@
 
 ### Requirement ⛏
 
-`sudo apt install jq`
+Use this command to install jq as the requirement : `sudo apt install jq`
 
 - Replace [CI_TOKEN] with your key in `main.py` file
 - Replace [GITLAB_TOKEN] with your key in `main.py` file
